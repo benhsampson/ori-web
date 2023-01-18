@@ -10,8 +10,8 @@ export const HeaderNav = () => {
   return (
     <header
       className={clsx(
-        "fixed w-full bg-white px-4 py-2.5 lg:px-6",
-        scrollY > 0 && "shadow-lg"
+        "fixed z-40 w-full bg-white px-4 py-2.5 transition-all lg:px-6",
+        scrollY > 0 && "drop-shadow"
       )}
     >
       <nav className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
