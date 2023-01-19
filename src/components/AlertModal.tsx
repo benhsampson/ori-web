@@ -79,6 +79,13 @@ export const AlertModal = () => {
             >
               Get notified
             </Button>
+            {state.status === "success" && (
+              <p className="mt-2 text-center text-green-800">
+                {`Thanks for signing up!`}
+                <br />
+                {`You'll receive an email when we go live.`}
+              </p>
+            )}
           </div>
         </form>
       </Modal.Content>
